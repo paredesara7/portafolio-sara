@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing - Sara Paredes</title>
+  <link rel="shortcut icon" href="../imagenes/pestanita.jpg"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  
+    <header class="banner">
+    <div class="banner-content">
+      <h1>Portafolio</h1>
+      <p>Sara Paredes</p>
+    </div>
+  </header>
+
+
+<nav>
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="testing.html">Testing</a></li>
+    <li><a href="diseños.html">Diseños Adaptados</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="tesis.html">Tesis</a></li>
+    <li><a href="certificados.html">Cursos y Certificados</a></li>
+  </ul>
+</nav>
+
+
+  <div class="container">
+    <section>
+      <h2>🟣Testing</h2>
+      
+      <h3>Prácticas de Testing</h3>
+      <div class="experience-item">
+      <p>Estas prácticas fueron realizadas como parte de un curso de testing. Incluyen ejemplos de historias de usuario, 
+         casos de prueba y reportes de bugs, documentados de forma sencilla para aplicar los conceptos aprendidos.
+      </p><br>
+      
+      <!-- Lista desplegable -->
+      <label for="testingSelector">Seleccione:</label>
+      <select id="testingSelector" onchange="mostrarContenido()">
+        <option value="">Elegir📸</option>
+        <option value="historias">Historias de Usuario</option>
+        <option value="casos">Casos de Prueba</option>
+        <option value="bugs">Reportes de Bug</option>
+      </select>
+
+      <!-- Contenido de Historias de Usuario -->
+      <div id="historias" class="testing-content" style="display:none;">
+        <div class="project-card">
+          <img src="../imagenes/testing/historia-usuario.png" alt="Historia de Usuario" class="project-image" />
+          <p>Historia de usuario escrita en Excel para registrar funcionalidades básicas del sistema.</p>
+        </div>
+      </div>
+
+      <!-- Contenido de Casos de Prueba -->
+      <div id="casos" class="testing-content" style="display:none;">
+        <div class="project-card">
+          <img src="../imagenes/testing/casos-prueba.png" alt="Casos de Prueba" class="project-image" />
+          <p>Ejemplo de caso de prueba con pasos, datos de entrada y resultados esperados.</p>
+        </div>
+      </div>
+
+      <!-- Contenido de Reportes de Bug -->
+      <div id="bugs" class="testing-content" style="display:none;">
+        <div class="project-card">
+          <img src="../imagenes/testing/report-bug.png" alt="Reportes de Bug" class="project-image" />
+          <p>Reporte de bug documentado: Permite guardar campos vacíos.</p>
+        </div>
+      </div>
+      </div>
+
+
+      <h3 style="margin-top: 2rem;">Pruebas en MT</h3>
+      <div class="experience-item">
+      <p>Ejemplos representativos de mi trabajo remoto, mostrando cómo aplico metodologías de QA:</p>
+      <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+        <li>Planificación y ejecución de pruebas funcionales de API REST (GET, POST, PUT, PATCH)</li>
+        <li>Documentación detallada de resultados</li>
+        <li>Detección y documentación de bugs</li>
+      </ul><br>
+      
+      <!-- Lista desplegable de Mastertech -->
+            <label for="mastertechSelector">Selecciona una categoría:</label>
+            <select id="mastertechSelector" onchange="mostrarContenidoMastertech()">
+              <option value="">Elegir📸</option>
+              <option value="banners">Caso de prueba</option>
+              <option value="bug_mt1">Reporte de un bug</option>
+            </select>
+            <!-- Contenido de plan de prueba -->
+            <div id="banners" class="mastertech-content" style="display:none;">
+              <div class="project-card">
+                <a href="../imagenes/testing/mt-casodeprueba1.png" target="_blank">
+                  <img src="../imagenes/testing/mt-casodeprueba1.png" alt="prueba para Mastertech" class="project-image" />
+                </a>
+                <p>Ejemplo ilustrativo del formato utilizado para Mastertech.</p>
+              </div>
+            </div>
+      <!-- Contenido: reporte bug -->
+              <div id="bug_mt1" class="mastertech-content" style="display:none;">
+                <div class="project-card">
+                  <a href="../imagenes/testing/mt-bug1.png" target="_blank">
+                    <img src="../imagenes/testing/mt-bug1.png" alt="prueba para Mastertech" class="project-image" />
+                  </a>
+                  <p>Ejemplo ilustrativo del formato utilizado para reportar un bug para Mastertech.</p>
+                </div>
+              </div>
+                      <script>
+                      function mostrarContenidoMastertech() {
+                        const selector = document.getElementById("mastertechSelector");
+                        const value = selector.value;
+                        const contents = document.querySelectorAll(".mastertech-content");
+
+                        contents.forEach(content => content.style.display = "none");
+                        if (value) {
+                          document.getElementById(value).style.display = "block";
+                        }
+                      }
+                      </script>
+
+
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Sara Paredes | Todos los derechos reservados ✨</p>
+  </footer>
+
+  <!-- AQUÍ VA EL JAVASCRIPT -->
+  <script>
+    function mostrarContenido() {
+      const selector = document.getElementById('testingSelector').value;
+      const contenidos = document.querySelectorAll('.testing-content');
+      
+      contenidos.forEach(contenido => {
+        contenido.style.display = 'none';
+      });
+      
+      if (selector) {
+        document.getElementById(selector).style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>
