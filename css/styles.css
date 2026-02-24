@@ -103,7 +103,7 @@ nav a:hover {
 
 .banner {
   background: linear-gradient(135deg, #8b5fbf 0%, #d4a5ff 100%);
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   animation: fadeInDown 0.8s ease-out;
   box-shadow: 0 10px 30px rgba(200, 150, 255, 0.3);
