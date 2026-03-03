@@ -79,7 +79,7 @@
       <div class="experience-item">
       <p>Ejemplos representativos de mi trabajo remoto, mostrando cómo aplico metodologías de QA:</p>
       <ul style="margin-left: 1.5rem; margin-top: 1rem;">
-        <li>Planificación y ejecución de pruebas funcionales de API REST (GET, POST, PUT, PATCH)</li>
+        <li>Planificación y ejecución de pruebas funcionales de API REST (GET, POST, PUT)</li>
         <li>Documentación detallada de resultados</li>
         <li>Detección y documentación de bugs</li>
       </ul><br>
@@ -90,6 +90,7 @@
               <option value="">Elegir📸</option>
               <option value="banners">Caso de prueba</option>
               <option value="bug_mt1">Reporte de un bug</option>
+              <option value="smoke">Smoke Test</option>
             </select>
             <!-- Contenido de plan de prueba -->
             <div id="banners" class="mastertech-content" style="display:none;">
@@ -109,6 +110,16 @@
                   <p>Ejemplo ilustrativo del formato utilizado para reportar un bug para Mastertech.</p>
                 </div>
               </div>
+
+              <div id="smoke" class="mastertech-content" style="display:none;">
+                <div class="project-card">
+                  <a href="../imagenes/testing/smoke.png" target="_blank">
+                    <img src="../imagenes/testing/smoke.png" alt="prueba para Mastertech" class="project-image" />
+                  </a>
+                  <p>Ejemplo de un Smoke Test realizado.</p>
+                </div>
+              </div>
+
                       <script>
                       function mostrarContenidoMastertech() {
                         const selector = document.getElementById("mastertechSelector");
