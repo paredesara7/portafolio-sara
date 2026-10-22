@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lila-900: #1e1030;
+  --color-lila-800: #2d1b4e;
+  --color-lila-700: #4c2882;
+  --color-lila-300: #d8b4fe;
+}
+
+body {
+  background-color: var(--color-lila-900);
+  color: white;
+}
