@@ -76,7 +76,7 @@ const Contacto = () => {
           </span>
 
           <span className="text-xs text-lila-400 mt-1">
-            in
+            Ver
           </span>
         </a>
 

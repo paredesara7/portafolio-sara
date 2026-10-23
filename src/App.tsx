@@ -6,6 +6,7 @@ import { Testing } from './components/Testing';
 import { Disenos } from './components/Disenos';
 import Contacto from './components/Contacto'; 
 import { Tesis } from './components/Tesis'; 
+import { Curso } from './components/Curso';
 
 function App() {
   const [paginaActual, setPaginaActual] = useState('inicio');
@@ -43,6 +44,7 @@ function App() {
         {paginaActual === 'contacto' && <Contacto />} 
         {paginaActual === 'disenos' && <Disenos />}
         {paginaActual === 'tesis' && <Tesis />}
+        {paginaActual === 'curso' && <Curso />}
       </main>
 
       <footer className="border-t border-lila-700 px-4 py-6 text-center text-sm text-lila-300">
